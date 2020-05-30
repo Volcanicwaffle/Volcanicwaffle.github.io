@@ -26,7 +26,7 @@
     <body>
     
 <div class="center">
-<button id = "btn1">
+<button id = "btn1" onmouseover="ye1()" onmouseout="ye2()">
     Press me,<br>
     i dare you
 </button>
@@ -35,6 +35,17 @@
 
 <script>
     var loser = document.getElementById("btn1");
+    var ye1 = function() {
+        document.getElementById("btn1").style.height = "36px";
+        document.getElementById("btn1").style.color = "red"
+        document.getElementById("btn1").textContent = ">:)"
+        
+    }
+    var ye2 = function() {
+        document.getElementById("btn1").style.height = "36px";
+        document.getElementById("btn1").textContent = "Press me, i dare you"
+        document.getElementById("btn1").style.color = "black";
+    }
     var haha = function() {
         alert("ha ha");
         alert("ha ha");
